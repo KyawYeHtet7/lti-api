@@ -34,7 +34,7 @@ function setupExpress () {
   // When receiving deep linking request redirects to deep screen
   lti.onDeepLinking(async (token, req, res) => {
     console.log('Deep Linking')
-    return lti.redirect(res, '/deeplink', { newResource: true })
+    return lti.redirect(res, '/lti/deeplink', { newResource: true })
   })
 
   // Start LTI provider in serverless mode
